@@ -4,14 +4,15 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/logo_dd2"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/Material" >
 
         <activity
             android:name=".MainActivity"
-            android:label="@string/app_name">
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -21,7 +22,8 @@
 
         <activity
             android:name=".ActivityOne"
-            android:label="@string/activity_one">
+            android:label="@string/activity_one"
+            android:theme="@style/Material.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.ACTIVITYONE" />
 
