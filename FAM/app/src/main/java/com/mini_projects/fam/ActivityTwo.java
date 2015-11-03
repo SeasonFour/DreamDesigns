@@ -1,9 +1,10 @@
 package com.mini_projects.fam;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
-public class ActivityTwo extends AppCompatActivity {
+public class ActivityTwo extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
