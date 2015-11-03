@@ -1,7 +1,13 @@
 package com.mini_projects.fam;
 
-/**
- * Created by iWanjugu on 02/11/2015.
- */
-public class ActivityOne {
+import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
+
+public class ActivityOne extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_one);
+    }
 }
