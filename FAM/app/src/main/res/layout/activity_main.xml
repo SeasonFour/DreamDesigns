@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
@@ -43,7 +43,48 @@
 
     <!--</com.github.clans.fab.FloatingActionMenu>-->
 
-</FrameLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:id="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/top_image_min"
+        android:baselineAlignBottom="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:text="@string/tag_line"
+        android:id="@+id/tag_line"
+
+        android:layout_marginTop="22dp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:layout_below="@+id/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/logo"
+        android:id="@+id/logo"
+        android:layout_alignTop="@+id/logo"
+        android:layout_toLeftOf="@+id/logo"
+        android:layout_alignBottom="@+id/logo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="50sp"
+        android:textStyle="bold|normal"
+        android:textColor="#000"
+        android:gravity="center" />
+
+
+</RelativeLayout>
 
 
 
