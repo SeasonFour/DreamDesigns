@@ -1,5 +1,6 @@
 package com.mini_projects.fam;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,7 +14,7 @@ import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+public class MainActivity extends Activity implements View.OnClickListener {
 
     //tags for the buttonIcons
     public static final String TAG_itemIcon1 = "icon1";
@@ -81,15 +82,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void buttonIcon2Click() {
-        startActivity(new Intent("android.intent.action.ACTIVITYTWO"));
+        Intent intent2 = new Intent(this, ActivityTwo.class);
+        startActivity(intent2);
     }
 
     private void buttonIcon3Click() {
-        startActivity(new Intent("android.intent.action.ACTIVITYTHREE"));
+        Intent intent3 = new Intent(this, ActivityThree.class);
+        startActivity(intent3);
     }
 
     private void buttonIcon4Click() {
-        startActivity(new Intent("android.intent.action.ACTIVITYFOUR"));
+        Intent intent4 = new Intent(this, ActivityFour.class);
+        startActivity(intent4);
     }
 
     public void onClick(View v) {
