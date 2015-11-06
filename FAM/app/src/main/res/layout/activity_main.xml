@@ -7,42 +7,6 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!--<com.github.clans.fab.FloatingActionMenu-->
-        <!--android:id="@+id/menu"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="match_parent"-->
-        <!--fab:menu_labels_showAnimation="@anim/fab_slide_in_from_right"-->
-        <!--fab:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"-->
-        <!--fab:menu_labels_padding="8dp">-->
-
-
-    <!--<com.github.clans.fab.FloatingActionButton-->
-        <!--android:id="@+id/fab1"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--fab:fab_size="mini"-->
-        <!--fab:fab_label="Menu item 1"-->
-        <!--android:background="@drawable/arena_50" />-->
-
-    <!--<com.github.clans.fab.FloatingActionButton-->
-        <!--android:id="@+id/fab2"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--fab:fab_size="mini"-->
-        <!--fab:fab_label="Menu item 2"-->
-        <!--android:background="@drawable/wifi_50" />-->
-
-    <!--<com.github.clans.fab.FloatingActionButton-->
-        <!--android:id="@+id/fab3"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--fab:fab_size="mini"-->
-        <!--fab:fab_label="Menu item 3"-->
-        <!--android:background="@drawable/coins_50" />-->
-
-
-    <!--</com.github.clans.fab.FloatingActionMenu>-->
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="435dp"
