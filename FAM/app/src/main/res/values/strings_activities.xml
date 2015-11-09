@@ -7,5 +7,12 @@
     <string name="activity_three">Activity Three</string>
     <string name="activity_four">Activity Four</string>
 
+    <!--App Intro-->
+    <!-- First slide -->
+    <string name="intro_title1">Ladies…</string>
+    <string name="intro_description1">…it\'s here!</string>
+
+    <string name="intro_title2">The Finest…</string>
+    <string name="intro_description2">…for the finest!</string>
 
 </resources>

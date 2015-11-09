@@ -4,4 +4,9 @@
     <color name="colorPrimaryDark">#59595d</color>
     <color name="colorAccent">#007399</color>
     <color name="primary_text_material_light">#4b4949</color>
+
+
+    <!-- Intro colors -->
+    <color name="color_intro1">#007399</color>
+    <color name="color_intro2">#FFF</color>
 </resources>
