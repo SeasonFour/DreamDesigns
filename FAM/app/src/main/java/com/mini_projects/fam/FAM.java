@@ -12,9 +12,7 @@ import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
 public class FAM extends Activity {
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void famMethod() {
         // 1. Create a button to attach the menu:
         // in Activity Context
         ImageView imageView1 = new ImageView(this); // Create an icon
