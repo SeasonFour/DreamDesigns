@@ -1,6 +1,15 @@
 <resources>
     <!--App Title -->
     <string name="app_name">Dream Designs</string>
+
+    <!-- Login Page (Main) -->
+    <string name="register">Register With:</string>
+    <string name="google_plus_btn">Google+</string>
+    <string name="twitter_btn">Twitter</string>
+    <string name="facebook_btn">Facebook</string>
+    <string name="login">Login</string>
+
+
     <string name="tag_line">...we make dreams...</string>
     <string name="logo">DD</string>
 
