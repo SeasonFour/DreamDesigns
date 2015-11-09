@@ -15,4 +15,6 @@
 
 
     <string name="action_settings">Settings</string>
+    <string name="search_store">Search Store</string>
+    <string name="search">Search</string>
 </resources>
