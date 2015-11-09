@@ -4,9 +4,6 @@
 
 
     <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
-    <uses-sdk
-        android:minSdkVersion="21"
-        android:targetSdkVersion="23" />
 
     <application
         android:allowBackup="true"
@@ -16,13 +13,23 @@
         android:theme="@style/Material" >
 
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
-            android:theme="@style/Material.NoActionBar">
+            android:name=".Login"
+            android:label="@string/register">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Material.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN_A" />
+
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
 
