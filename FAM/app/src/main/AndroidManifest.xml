@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mini_projects.fam" >
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mini_projects.fam">
 
 
     <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
@@ -10,7 +11,8 @@
         android:icon="@drawable/logo_dd2"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Material" >
+        android:theme="@style/Material"
+        tools:replace="android:icon">
 
         <activity
             android:name=".MyIntro"
