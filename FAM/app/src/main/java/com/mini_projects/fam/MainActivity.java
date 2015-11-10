@@ -10,6 +10,8 @@ import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
@@ -48,7 +50,6 @@ public class MainActivity extends Activity {
 
         //---------------------------------------------------------------//
         //Floating Action Menu//
-
 
         // 1. Create a button to attach the menu:
         // in Activity Context
@@ -131,6 +132,7 @@ public class MainActivity extends Activity {
         list = (ListView) findViewById(R.id.list);
         list.setAdapter(theAdapter);
 
+        //OnClick on the whole list
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 new SweetAlertDialog(MainActivity.this)
@@ -138,6 +140,31 @@ public class MainActivity extends Activity {
                         .show();
             }
         });
+
+//        Ian's attempts
+//        list.setOnItemClickListener(listItem);
+//
+//        private AdapterView.OnItemClickListener listItem = new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                String info = ((TextView) view).getText().toString();
+//                Toast.makeText(getBaseContext(),"Item "+info, Toast.LENGTH_LONG).show();
+//            }
+//        }
+
+//        //OnClick on the images - attempt
+//        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//                for(imgid[i] = 0; i <= imgid.length; i++){
+//                    if(i == R.drawable.new_in){
+//                        new SweetAlertDialog(MainActivity.this)
+//                                .setTitleText("Here's a message!")
+//                                .show();
+//                    }
+//                }
+//            }
+//        });
+
 
     }
 }
