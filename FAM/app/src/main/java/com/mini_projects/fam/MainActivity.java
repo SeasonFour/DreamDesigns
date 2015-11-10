@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -30,7 +31,7 @@ public class MainActivity extends FAM {
             R.drawable.men,
             R.drawable.kids,
     };
-    ListView infoList;
+    ListView list;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -119,8 +120,16 @@ public class MainActivity extends FAM {
                 imgid
         );
 
-        infoList = (ListView) findViewById(R.id.list);
-        infoList.setAdapter(theAdapter);
+        list = (ListView) findViewById(R.id.list);
+        list.setAdapter(theAdapter);
+
+        list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Intent i = new Intent(MainActivity.this, ActivityOne.class);
+                startActivity(i);
+            }
+        });
 
     }
 }
