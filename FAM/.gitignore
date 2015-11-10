@@ -6,7 +6,6 @@
 /build
 /captures
 /settings.gradle
-/FAM.iml
-/local.properties
-/gradlew
-/gradlew.bat
+FAM.iml
+gradlew
+gradlew.bat
