@@ -3,4 +3,155 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+
+
+    <RelativeLayout
+        android:id="@+id/thumb_button_1"
+        android:layout_width="100dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="1dp"
+        android:scaleType="centerCrop"/>
+
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:src="@drawable/lady1"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:id="@+id/imageView13"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView12" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:src="@drawable/lady2"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:id="@+id/imageView5"
+        android:layout_alignTop="@+id/imageView10"
+        android:layout_alignStart="@+id/imageView11" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/lady3"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:id="@+id/imageView7"
+        android:layout_alignTop="@+id/imageView14"
+        android:layout_alignStart="@+id/imageView10" />
+
+
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/kids1"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:id="@+id/imageView6"
+        android:layout_above="@+id/imageView12"
+        android:layout_alignStart="@+id/imageView13" />
+
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/kids2"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:layout_below="@+id/buttonStore"
+        android:layout_toEndOf="@+id/imageView7"
+        android:id="@+id/imageView14" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/kids3"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:layout_below="@+id/imageView8"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="48dp"
+        android:id="@+id/imageView12" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/men1"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:layout_above="@+id/imageView12"
+        android:layout_alignStart="@+id/imageView6" />
+
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/men2"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:id="@+id/imageView11"
+        android:layout_above="@+id/imageView12"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/men3"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:id="@+id/imageView8"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/imageView10" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:maxWidth="300dp"
+        android:maxHeight="300dp"
+        android:layout_marginLeft="3dp"
+        android:src="@drawable/kids1"
+        android:layout_marginRight="16dp"
+        android:contentDescription=""
+        android:id="@+id/imageView10"
+        android:layout_alignTop="@+id/imageView12"
+        android:layout_centerHorizontal="true" />
+
+
+
 </LinearLayout>
