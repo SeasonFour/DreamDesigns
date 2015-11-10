@@ -122,14 +122,10 @@ public class MainActivity2 extends Activity implements View.OnClickListener {
         ImageView kidsImageView = (ImageView) findViewById(R.id.kids_image_main);
         kidsImageView.setOnClickListener(this);
 
-
     }
-
     private void NewInClick() {
         new SweetAlertDialog(MainActivity2.this)
                 .setTitleText("New stuff")
-                .setContentText("All")
-                .setContentText("Jackets")
                 .setContentText("Shoes")
                 .show();
     }
@@ -137,9 +133,8 @@ public class MainActivity2 extends Activity implements View.OnClickListener {
     private void WomenClick() {
         new SweetAlertDialog(MainActivity2.this)
                 .setTitleText("Women stuff")
-                .setContentText("Here's a custom image.")
-                .show()
-                .cancel();
+                .setContentText("Here's a something")
+                .show();
     }
 
     private void MenClick() {
