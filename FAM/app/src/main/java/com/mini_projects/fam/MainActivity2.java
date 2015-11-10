@@ -17,7 +17,7 @@ import cn.pedant.SweetAlert.SweetAlertDialog;
  */
 
 
-public class MainActivity2 extends Activity {
+public class MainActivity2 extends Activity implements View.OnClickListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -99,19 +99,89 @@ public class MainActivity2 extends Activity {
         });
 
 
-        // clicking the titles to show dialogue
+        // Creating Clickable Items
 
-        // Creating on click change activities for a button
-        TextView womenTextView = (TextView) findViewById(R.id.women_title1);
+        // Setting on click change activities for a button
+        TextView newTextView = (TextView) findViewById(R.id.new_in_title_main);
+        newTextView.setOnClickListener(this);
+        ImageView newImageView = (ImageView) findViewById(R.id.new_in_image_main);
+        newImageView.setOnClickListener(this);
 
-        womenTextView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                new SweetAlertDialog(MainActivity2.this)
-                        .setTitleText("Here's a message!")
-                        .show();
-            }
-        });
+        TextView womenTextView = (TextView) findViewById(R.id.women_title_main);
+        womenTextView.setOnClickListener(this);
+        ImageView womenImageView = (ImageView) findViewById(R.id.women_image_main);
+        womenImageView.setOnClickListener(this);
 
+        TextView menTextView = (TextView) findViewById(R.id.men_title_main);
+        menTextView.setOnClickListener(this);
+        ImageView menImageView = (ImageView) findViewById(R.id.men_image_main);
+        menImageView.setOnClickListener(this);
+
+        TextView kidsTextView = (TextView) findViewById(R.id.kids_title_main);
+        kidsTextView.setOnClickListener(this);
+        ImageView kidsImageView = (ImageView) findViewById(R.id.kids_image_main);
+        kidsImageView.setOnClickListener(this);
+
+
+    }
+
+    private void NewInClick() {
+        new SweetAlertDialog(MainActivity2.this)
+                .setTitleText("New stuff")
+                .setContentText("All")
+                .setContentText("Jackets")
+                .setContentText("Shoes")
+                .show();
+    }
+
+    private void WomenClick() {
+        new SweetAlertDialog(MainActivity2.this)
+                .setTitleText("Women stuff")
+                .setContentText("Here's a custom image.")
+                .show()
+                .cancel();
+    }
+
+    private void MenClick() {
+        new SweetAlertDialog(MainActivity2.this)
+                .setTitleText("Men stuff")
+                .show();
+    }
+
+    private void KidsClick() {
+        new SweetAlertDialog(MainActivity2.this)
+                .setTitleText("Kids stuff")
+                .show();
+    }
+
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()) {
+            case R.id.new_in_image_main:
+                NewInClick();
+                break;
+            case R.id.new_in_title_main:
+                NewInClick();
+                break;
+            case R.id.women_image_main:
+                WomenClick();
+                break;
+            case R.id.women_title_main:
+                WomenClick();
+                break;
+            case R.id.men_image_main:
+                MenClick();
+                break;
+            case R.id.men_title_main:
+                MenClick();
+                break;
+            case R.id.kids_image_main:
+                KidsClick();
+                break;
+            case R.id.kids_title_main:
+                KidsClick();
+                break;
+
+        }
     }
 }
