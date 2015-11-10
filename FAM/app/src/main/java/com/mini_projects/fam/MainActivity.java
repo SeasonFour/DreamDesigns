@@ -1,6 +1,7 @@
 package com.mini_projects.fam;
 
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -13,15 +14,22 @@ import android.widget.ListView;
 import com.oguzdev.circularfloatingactionmenu.library.FloatingActionMenu;
 import com.oguzdev.circularfloatingactionmenu.library.SubActionButton;
 
-public class MainActivity extends FAM {
+import cn.pedant.SweetAlert.SweetAlertDialog;
+
+public class MainActivity extends Activity {
+
+    public final String NEW_IN_NAME = "NEW IN";
+    public final String WOMEN_NAME = "WOMEN";
+    public final String MEN_NAME = "MEN";
+    public final String KIDS_NAME = "KIDS";
 
     //List View stuff
     // Titles
     String[] names = {
-            "NEW IN",
-            "WOMEN",
-            "MEN",
-            "KIDS",
+            NEW_IN_NAME,
+            WOMEN_NAME,
+            MEN_NAME,
+            KIDS_NAME,
     };
 
     // Icons
@@ -125,9 +133,9 @@ public class MainActivity extends FAM {
 
         list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                Intent i = new Intent(MainActivity.this, ActivityOne.class);
-                startActivity(i);
+                new SweetAlertDialog(MainActivity.this)
+                        .setTitleText("Here's a message!")
+                        .show();
             }
         });
 
