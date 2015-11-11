@@ -5,3 +5,8 @@
 .DS_Store
 /build
 /captures
+/settings.gradle
+FAM.iml
+gradlew
+gradlew.bat
+/.idea/inspectionProfiles

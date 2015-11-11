@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="NEW IN"
+            android:id="@+id/new_in_title_main"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="18dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:id="@+id/new_in_image_main"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/new_in"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="WOMEN"
+            android:id="@+id/women_title_main"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="18dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:id="@+id/women_image_main"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/top_image" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="MEN"
+            android:id="@+id/men_title_main"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="18dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:id="@+id/men_image_main"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/men"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="KIDS"
+            android:id="@+id/kids_title_main"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="18dp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:id="@+id/kids_image_main"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/kids"/>
+
+    </LinearLayout>
+</ScrollView>
+
+
+

@@ -30,7 +30,7 @@ public class Login extends Activity implements View.OnClickListener {
         registerTextView.setOnClickListener(this);
     }
     private void toMainActivityClick() {
-    Intent a = new Intent(this, MainActivity.class);
+    Intent a = new Intent(this, MainActivity2.class);
     startActivity(a);
     }
 

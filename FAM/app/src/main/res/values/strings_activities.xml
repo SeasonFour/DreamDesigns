@@ -2,10 +2,10 @@
 
 <resources>
     <!-- Other Activity Titles -->
-    <string name="activity_one">Activity One</string>
-    <string name="activity_two">Shoes</string>
-    <string name="activity_three">Activity Three</string>
-    <string name="activity_four">Activity Four</string>
+    <string name="activity_one">WOMEN</string>
+    <string name="activity_two">NEW IN</string>
+    <string name="activity_three">MEN</string>
+    <string name="activity_four">KIDS</string>
 
     <!--App Intro-->
     <!-- First slide -->

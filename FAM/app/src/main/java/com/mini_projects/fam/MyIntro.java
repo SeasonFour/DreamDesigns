@@ -52,13 +52,25 @@ public class MyIntro extends AppIntro {
                 title = "",
                 description = "",
                 image = R.drawable.woman3,
-                background_colour = Color.parseColor("#FFFFFFFF")));
+                background_colour = Color.parseColor("#FFFFFF")));
 
         addSlide(AppIntroFragment.newInstance(
                 title = "",
                 description = "",
-                image = R.drawable.man1,
-                background_colour = Color.parseColor("#FFD91E18")));
+                image = R.drawable.man4,
+                background_colour = Color.parseColor("#FFFFFF")));
+
+        addSlide(AppIntroFragment.newInstance(
+                title = "",
+                description = "",
+                image = R.drawable.woman4,
+                background_colour = Color.parseColor("#FFFFFF")));
+
+        addSlide(AppIntroFragment.newInstance(
+                title = "",
+                description = "",
+                image = R.drawable.man6,
+                background_colour = Color.parseColor("#FFFFFF")));
 
 
                 // OPTIONAL METHODS
